@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+</head>
+<body>
+
+<h1>Please input the VIP address</h1>
+
+
+
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">GO</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    
+	
+	var x, text;
+
+    // 获取 id="numb" 的值
+    x = document.getElementById("numb").value;
+    var iframe = document.createElement('iframe'); 
+    iframe.src= "http://jiexi.kingsnug.cn/tx.php?url=" + x;  
+    iframe.width = "100%";
+    iframe.height ="500";
+    iframe.frameborder="0";
+	iframe.scrolling = "no";
+	iframe.allowfullscreen="true";
+	iframe.webkitallowfullscreen="true";
+	iframe.mozallowfullscreen="true";
+	
+	
+	
+document.body.appendChild(iframe);
+    // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = "Input error the address ";
+    } else {
+        text = "PASS";
+    }
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+<p>This website can analyze QQ VIP/bilibili VIP/ youku VIP etc. <p>
+
+<p>If you have any questions, please contact xiao ao himself.<p>
+
+<p>This website is for my own use only. I do not participate in commercial use </p>
+
+<p>If you have any questions, please contact xiao ao himself.<p>
+
+<p>Please pay attention to xiao ao's daily public account<p>
+<p>
+<img src="https://mmbiz.qpic.cn/mmbiz_png/ibdicLpJWooFJsNkfE515M4xZLrJu8Pv1X3icbVpFvgI0gtfCF4gEY1BWSS9xGWz0H98Biam8cVCWu26vy7Q6qpCLA/640?wx_fmt=png&amp;wxfrom=5&amp;wx_lazy=1">
+</p>
+
+<p>Xiao ao temporary website:
+</p>
+<p>https://f600lt.github.io/2018/08/06/xiaoaoderichang/
+</p>
+</body>
+</html>
+
