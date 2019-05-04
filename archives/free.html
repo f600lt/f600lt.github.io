@@ -15,6 +15,8 @@
 
 <button type="button" onclick="myFunction()">GO</button>
 
+<button type="button" onclick="myAiQiYi()">AiQiYi/bilibili</button>
+
 <p id="demo"></p>
 
 <script>
@@ -27,7 +29,7 @@ function myFunction() {
     x = document.getElementById("numb").value;
     var iframe = document.createElement('iframe'); 
     iframe.src= "https://www.jqaaa.com/jq1/?url=" + x;  
-    iframe.width = "100%";
+    iframe.width = "657";
     iframe.height ="504";
     iframe.frameborder="0";
 	iframe.scrolling = "no";
@@ -40,7 +42,38 @@ function myFunction() {
 document.body.appendChild(iframe);
     // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
     if (isNaN(x) || x < 1 || x > 10) {
-        text = "Input error the address ";
+        text = " XiaoAo ";
+    } else {
+        text = "FaiL";
+    }
+
+    document.getElementById("demo").innerHTML = text;
+}
+</script>
+<script>
+function myAiQiYi() {
+    
+	
+	var x, text;
+
+    // 获取 id="numb" 的值
+    x = document.getElementById("numb").value;
+    var iframe = document.createElement('iframe'); 
+    iframe.src= "http://jiexi.kingsnug.cn/tx.php?url=https://www.iqiyi.com/v_19rr5eoxww.html" + x;  
+    iframe.width = "657";
+    iframe.height ="504";
+    iframe.frameborder="0";
+	iframe.scrolling = "no";
+	iframe.allowfullscreen="true";
+	iframe.webkitallowfullscreen="true";
+	iframe.mozallowfullscreen="true";
+	
+	
+	
+document.body.appendChild(iframe);
+    // 如果输入的值 x 不是数字或者小于 1 或者大于 10，则提示错误 Not a Number or less than one or greater than 10
+    if (isNaN(x) || x < 1 || x > 10) {
+        text = " XiaoAo ";
     } else {
         text = "PASS";
     }
@@ -53,8 +86,6 @@ document.body.appendChild(iframe);
 <p>If you have any questions, please contact xiao ao himself.<p>
 
 <p>This website is for my own use only. I do not participate in commercial use </p>
-
-<p>If you have any questions, please contact xiao ao himself.<p>
 
 <p>Please pay attention to xiao ao's daily public account<p>
 
